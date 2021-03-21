@@ -8,7 +8,7 @@
     "create-local": "graph create --node http://localhost:8020/ oeth/ethereum-blocks",
     "remove-local": "graph remove --node http://localhost:8020/ oeth/ethereum-blocks",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 oeth/ethereum-blocks",
-    "deploy-oeth": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ oeth/xdai-blocks"
+    "deploy-oeth": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ oeth/ethereum-blocks"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.16.0",
