@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: xdai
+    network: oeth
     source:
-      address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
+      address: "0xB45070DFD2209eAA070d0103DBA4A8eafa98B600"
       abi: ConverterRegistryContract
-      startBlock: 11813490
+      startBlock: 9800
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
