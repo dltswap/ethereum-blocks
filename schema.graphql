@@ -1,4 +1,4 @@
-type Block @entity {
+type BlockEntity @entity {
   id: ID!
   number: BigInt!
   timestamp: BigInt!
