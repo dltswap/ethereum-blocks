@@ -22,6 +22,6 @@ export function handleBlock(block: ethereum.Block): void {
     blockEntity.stateRoot = block.stateRoot.toHex();
     blockEntity.size = block.size;
     blockEntity.unclesHash = block.unclesHash.toHex();
-    log.debug("handle block: {}", [block.number.toString()])
+    log.info("handle block: {}", [block.number.toString()])
     blockEntity.save();
   }
