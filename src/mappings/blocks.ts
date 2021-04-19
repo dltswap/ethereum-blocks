@@ -1,5 +1,5 @@
 import {
-    ethereum
+    ethereum, log
 } from "@graphprotocol/graph-ts"
 
 import {
@@ -22,6 +22,6 @@ export function handleBlock(block: ethereum.Block): void {
     blockEntity.stateRoot = block.stateRoot.toHex();
     blockEntity.size = block.size;
     blockEntity.unclesHash = block.unclesHash.toHex();
-    console.debug("handle block", block)
+    log.debug("handle block: %d", Array.from(block.number.toString()))
     blockEntity.save();
   }
