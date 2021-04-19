@@ -5,9 +5,9 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ oeth/ethereum-blocks",
-    "create-local": "graph create --node http://localhost:8020/ oeth/ethereum-blocks --access-token 5f1b4e1c6ac94ea68db9847a9f7b2ae",
-    "remove-local": "graph remove --node http://localhost:8020/ oeth/ethereum-blocks --access-token 5f1b4e1c6ac94ea68db9847a9f7b2ae",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 oeth/ethereum-blocks --access-token 5f1b4e1c6ac94ea68db9847a9f7b2ae",
+    "create-local": "graph create --node http://localhost:8020/ oeth/ethereum-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ oeth/ethereum-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 oeth/ethereum-blocks",
     "deploy-oeth": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ oeth/ethereum-blocks"
   },
   "dependencies": {
