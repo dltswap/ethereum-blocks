@@ -3,12 +3,12 @@ import {
 } from "@graphprotocol/graph-ts"
 
 import {
-    BlockEntity
+    Block
 } from "../../generated/schema"
 
 export function handleBlock(block: ethereum.Block): void {
     let id = block.hash.toHex()
-    let blockEntity = new BlockEntity(id);
+    let blockEntity = new Block(id);
     blockEntity.number = block.number;
     blockEntity.timestamp = block.timestamp;
     blockEntity.parentHash = block.parentHash.toHex();
